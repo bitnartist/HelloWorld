@@ -7,38 +7,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("four times table");
-        int result = 4*1;
-        System.out.println(result);
-        result = 4 * 2;
-        System.out.println(result);
-        result = 4 * 3;
-        System.out.println(result);
-        result = 4 * 4;
-        System.out.println(result);
-        result = 4 * 5;
-        System.out.println(result);
-        result = 4 * 6;
-        System.out.println(result);
-        result = 4 * 7;
-        System.out.println(result);
-        result = 4 * 8;
-        System.out.println(result);
-        result = 4 * 9;
-        System.out.println(result);
+        // While Loop
+        int i = 1;
+        while(i < 10) {
+            System.out.println(6 * i);
+            i = i + 1; // i++ 하면 자동으로 1이 증가함!
+        }
 
-        System.out.println("What time table is this: ");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println(number * 1);
-        System.out.println(number * 2);
-        System.out.println(number * 3);
-        System.out.println(number * 4);
-        System.out.println(number * 5);
-        System.out.println(number * 6);
-        System.out.println(number * 7);
-        System.out.println(number * 8);
-        System.out.println(number * 9);
-
+        // For Loop 위 과정을 For Loop로 더욱 단순하게 만들 수 있음!
+        for(int j = 1; j < 10; j++) {
+            System.out.println(7 * j);
+        }
     }
 }
